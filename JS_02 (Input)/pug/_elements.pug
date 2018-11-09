@@ -1,0 +1,26 @@
+//- Image
+	@param {string} name
+mixin img( name )
+	- var size = getImageSize( name );
+	img( src= setImagePath( setImageExtension( name ) ), alt='', width= size[0], height= size[1] )&attributes( attributes )
+
+
+//- Jpg image
+	@param {string} name
+mixin jpg( name )
+	- var size = getImageSize( name );
+	img( src= setImagePath( name +'.jpg' ), alt='', width= size[0], height= size[1] )&attributes( attributes )
+
+
+//- Png image
+	@param {string} name
+mixin png( name )
+	- var size = getImageSize( name );
+	img( src= setImagePath( name +'.png' ), alt='', width= size[0], height= size[1] )&attributes( attributes )
+
+
+//- Loop without indexing mixin
+	@param {number} iterations - number of iterations
+mixin loop( iterations )
+	- for ( var i = 0; i < iterations; i++ )
+		block
