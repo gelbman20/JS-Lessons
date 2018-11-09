@@ -1,0 +1,121 @@
+// Variables
+
+//
+// Color system
+//
+
+// Gray colors
+$white: #ffffff;
+$gray-100: #edeff4;
+$gray-200: #d7d7d7;
+$gray-300: #cccccc;
+$gray-400: #b7b7b7;
+$gray-500: #9b9b9b;
+$gray-600: #868e96;
+$gray-700: #2c343b;
+$gray-800: #151515;
+$gray-900: #111111;
+$black: #000000;
+
+//
+// Body 
+//
+$body-bg: $white;
+$body-color: $gray-500;
+
+$theme-colors: ();
+
+// Accent colors
+$primary: #ff7570;
+
+//
+// Page
+//
+$page-boxed-width: 1600px;
+$page-boxed-background-color: $gray-100;
+$page-boxed-background-image: url(../images/bg-pattern-boxed.png);
+
+//
+// Components
+//
+// Define common padding and border radius sizes and more.
+$border-width: 1px;
+
+$border-radius: 0;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+$transition-base: all .3s ease-in-out;
+
+// Custom
+$shadow-area-1: -3px 0px 50px -2px rgba(0, 0, 0, 0.09);
+$shadow-area-2: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+
+//
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif-1: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: "Roboto Slab", "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-family-base: $font-family-sans-serif;
+$font-family-sec: $font-family-sans-serif-1;
+
+$font-weight-bold: 700;
+
+// Base fonts 
+$font-size-body: 14px;
+$font-size-lg: 18px;
+$font-size-sm: 12px;
+
+$_lh-base: 28px;
+$_lh-lg: 28px;
+$_lh-sm: 18px;
+
+$font-weight-base: 400;
+
+// ** < Calculated font values >
+$line-height-base: ($_lh-base / $font-size-body);
+$line-height-lg: ($_lh-lg / $font-size-lg);
+$line-height-sm: ($_lh-sm / $font-size-sm);
+// ** </ Calculated font values >
+
+// Headings
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: $gray-800;
+
+// Template Heading Values
+$_h1-fsz: 60;
+$_h2-fsz: 48;
+$_h3-fsz: 36;
+$_h4-fsz: 24;
+$_h5-fsz: 18;
+$_h6-fsz: 16;
+
+$_h1-lh: 72;
+$_h2-lh: 70;
+$_h3-lh: 48;
+$_h4-lh: 30;
+$_h5-lh: 26;
+$_h6-lh: 24;
+
+// ** < Calculated Headings values >
+$h1-font-size: $_h1-fsz * 1px;
+$h2-font-size: $_h2-fsz * 1px;
+$h3-font-size: $_h3-fsz * 1px;
+$h4-font-size: $_h4-fsz * 1px;
+$h5-font-size: $_h5-fsz * 1px;
+$h6-font-size: $_h6-fsz * 1px;
+
+$h1-line-height: ($_h1-lh / $_h1-fsz);
+$h2-line-height: ($_h2-lh / $_h2-fsz);
+$h3-line-height: ($_h3-lh / $_h3-fsz);
+$h4-line-height: ($_h4-lh / $_h4-fsz);
+$h5-line-height: ($_h5-lh / $_h5-fsz);
+$h6-line-height: ($_h6-lh / $_h6-fsz);
+// ** </ Calculated Headings values >
+
